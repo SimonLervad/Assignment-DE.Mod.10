@@ -37,7 +37,7 @@ start();
 }
 
 function count() {
-    counter = counter + 1;
+    counter = counter + 100;
     $("total").innerHTML = counter;
 }
 
@@ -52,7 +52,9 @@ const check = function(e) {
         $(j).style.display = "inherit";
     } else {
         $("answer").innerHTML = "Du har svaret forkert";
+        $(j).style.display = "none";
         j++;
+        $(j).style.display = "inherit";
     }
 }
 
